@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Andes | Simulador Divisa </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Simuladores</h1>
+    <h2>Convertidor de moneda</h2>
+    <form class="formulario">
+            <div>
+                <p>Elija la moneda</p>
+                <label for="dolar"><span>Dólar</span></label>
+                <input type="radio" name="divisa" id="dolar" value="dolar">
+                <label for="euro"><span>Euro</span></label>
+                <input type="radio" name="divisa" id="euro" value="euro">
+            </div>
+            <div>
+                <p>Monto a convertir</p>
+                <input type="number" id="valor" min="1" name="valor">
+                <div><input type="button" id="calcular" value="Calcular"></div>
+            </div>
+            <div id="divResultado"></div>
+    </form>
+
+    <h2>Plazo fijo</h2>
+    <form class="formulario">
+            <div>
+                <p>Monto a invertir (ARS)</p>
+                <span>$</span>
+                <input type="number" id="valorInversion" min="500" max="10000000" name="valorInversion">
+                <p>(El valor debe ser igual o superior a 500)</p>
+                <p>Tiempo de la inversión</p>
+                <label for="tiempoInversion"></label>
+                <select name="tiempoInversion" id="tiempoInversion">
+                    <option value="1" selected>1 mes</option>
+                    <option value="2">2 meses</option>
+                    <option value="3">3 meses</option>
+                    <option value="4">4 meses</option>
+                    <option value="5">5 meses</option>
+                    <option value="6">6 meses</option>
+                    <option value="7">7 meses</option>
+                    <option value="8">8 meses</option>
+                    <option value="9">9 meses</option>
+                    <option value="10">10 meses</option>
+                    <option value="11">11 meses</option>
+                    <option value="12">12 meses</option>
+                </select>
+                <div><input type="button" id="calcularInv" value="Calcular"></div>
+            </div>
+            <div><input type="reset" name="reset" id="reset"> </div>
+            <div id="detalle"></div>
+    </form>
+
+    <script src="./files.js/conversor.js"></script>
+    <script src="./files.js/plazo.js"></script>
+</body>
+
+</html>
