@@ -1,17 +1,13 @@
-body {
-    background-color: rgba(0, 0, 0, 0.685);
-}
-
 h1 {
     font-size: 40px;
-    color: bisque;
+    color: rgb(170, 61, 61);
     text-decoration: underline 1px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
-    color: bisque;
+    color: rgb(170, 61, 61);
     font-size: 30px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,22 +25,44 @@ h2 {
     text-align: center;
 }
 
+.login,
+.buscador {
+    height: 150px;
+}
+
 #calcular,
 #calcularInv {
     margin: 10px;
     font-size: 15px;
-    background-color: cornflowerblue;
 }
 
 p,
-span {
-    color: bisque;
+span,
+h3 {
+    color: rgb(170, 61, 61);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#tiempoInversion,
+#valor,
+#valorInversion {
+    color: rgb(170, 61, 61);
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#tiempoInversion, #valor, #valorInversion {
-    color: black;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#buscador {
+    width: 30vw;
+    height: 30px;
+}
+
+#loginForm input {
+    width: 15vw;
+    height: 30px;
+}
+
+.dark {
+    background-color: black;
 }

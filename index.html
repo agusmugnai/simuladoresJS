@@ -5,14 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco Andes | Simulador Divisa </title>
+    <title>Banco Andes | Simuladores </title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1>Simuladores</h1>
-    <h2>Convertidor de moneda</h2>
-    <form class="formulario">
+<body class="dark">
+    <button id="modoOscuro">Modo dark</button>
+
+    <h1>Bienvenido al Banco Andes</h1>
+    <section class="formulario buscador">
+        <h3>Buscador</h3>
+        <button id="btn">Buscar</button>
+        <input type="text" name="buscador" id="buscador"
+            placeholder="Encontrá la sucursal más cercana. (Ingresá tu ciudad)">
+        <div id="resultado"></div>
+    </section>
+
+    <hr>
+
+    <section class="formulario login">
+        <h3>Registrarme</h3>
+        <div>
+            <form id="loginForm">
+                <input type="email" name="mail" placeholder="e-mail">
+                <input type="password" placeholder="password">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Convertidor de moneda</h3>
+        <form class="formulario">
             <div>
                 <p>Elija la moneda</p>
                 <label for="dolar"><span>Dólar</span></label>
@@ -26,10 +52,14 @@
                 <div><input type="button" id="calcular" value="Calcular"></div>
             </div>
             <div id="divResultado"></div>
-    </form>
+        </form>
+    </section>
 
-    <h2>Plazo fijo</h2>
-    <form class="formulario">
+    <hr>
+
+    <section>
+        <h3>Plazo fijo</h3>
+        <form class="formulario">
             <div>
                 <p>Monto a invertir (ARS)</p>
                 <span>$</span>
@@ -53,10 +83,13 @@
                 </select>
                 <div><input type="button" id="calcularInv" value="Calcular"></div>
             </div>
-            <div><input type="reset" name="reset" id="reset"> </div>
             <div id="detalle"></div>
-    </form>
+        </form>
+    </section>
 
+    <script src="./files.js/modoOscuro.js"></script>
+    <script src="./files.js/buscador.js"></script>
+    <script src="./files.js/login.js"></script>
     <script src="./files.js/conversor.js"></script>
     <script src="./files.js/plazo.js"></script>
 </body>
