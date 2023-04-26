@@ -20,6 +20,11 @@ body {
     padding: 20px;
 }
 
+.dark {
+    background-color: black;
+    color: white;
+}
+
 h1 {
     color: var(--primary-color);
     font-size: 40px;
